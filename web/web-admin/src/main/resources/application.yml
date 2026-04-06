@@ -1,0 +1,30 @@
+server:
+  port: 8080
+
+spring:
+  datasource:
+    type: com.zaxxer.hikari.HikariDataSource
+    url: jdbc:mysql://192.168.64.4:3306/lease?useUnicode=true&characterEncoding=utf-8&useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=GMT%2b8
+    username: ubuntu
+    password: Root1234!
+    hikari:
+      connection-test-query: SELECT 1 # Connection validation query
+      connection-timeout: 60000 # Database connection timeout (default: 30 seconds)
+      idle-timeout: 500000 # Maximum idle time for connections (default: 600000 ms / 10 minutes)
+      max-lifetime: 540000 # Maximum lifetime of a connection in the pool (0 = infinite, default: 1800000 ms / 30 minutes)
+      maximum-pool-size: 12 # Maximum number of connections in the pool (default: 10)
+      minimum-idle: 10 # Minimum number of idle connections
+      pool-name: SPHHikariPool # Connection pool name
+
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
+knife4j:
+  enable: true
+
+springdoc:
+  api-docs:
+    enabled: true
+  swagger-ui:
+    enabled: true
