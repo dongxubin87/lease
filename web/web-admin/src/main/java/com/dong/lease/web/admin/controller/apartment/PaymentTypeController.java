@@ -36,6 +36,7 @@ public class PaymentTypeController {
     @Operation(summary = "Delete a payment method by ID")
     @DeleteMapping("deleteById")
     public Result deletePaymentById(@RequestParam Long id) {
+        service.removeById(id);
         return Result.ok();
     }
 

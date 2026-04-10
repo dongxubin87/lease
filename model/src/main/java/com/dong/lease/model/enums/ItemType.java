@@ -6,21 +6,19 @@ import com.fasterxml.jackson.annotation.JsonValue;
 
 public enum ItemType implements BaseEnum {
 
-    APARTMENT(1, "公寓"),
-
-    ROOM(2, "房间");
-
+    APARTMENT(1, "Apartment"),
+    ROOM(2, "Room");
 
     @EnumValue
     @JsonValue
     private Integer code;
+
     private String name;
 
     @Override
     public Integer getCode() {
         return this.code;
     }
-
 
     @Override
     public String getName() {
@@ -31,5 +29,4 @@ public enum ItemType implements BaseEnum {
         this.code = code;
         this.name = name;
     }
-
 }

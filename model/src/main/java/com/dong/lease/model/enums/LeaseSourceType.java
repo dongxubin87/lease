@@ -3,11 +3,10 @@ package com.dong.lease.model.enums;
 import com.baomidou.mybatisplus.annotation.EnumValue;
 import com.fasterxml.jackson.annotation.JsonValue;
 
-
 public enum LeaseSourceType implements BaseEnum {
 
-    NEW(1, "新签"),
-    RENEW(2, "续约");
+    NEW(1, "New Lease"),
+    RENEW(2, "Renewal");
 
     @JsonValue
     @EnumValue

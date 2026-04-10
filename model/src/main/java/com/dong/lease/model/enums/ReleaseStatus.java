@@ -5,9 +5,8 @@ import com.fasterxml.jackson.annotation.JsonValue;
 
 public enum ReleaseStatus implements BaseEnum {
 
-    RELEASED(1, "已发布"),
-    NOT_RELEASED(0, "未发布");
-
+    RELEASED(1, "Released"),
+    NOT_RELEASED(0, "Unreleased");
 
     @EnumValue
     @JsonValue
@@ -15,12 +14,10 @@ public enum ReleaseStatus implements BaseEnum {
 
     private String name;
 
-
     ReleaseStatus(Integer code, String name) {
         this.code = code;
         this.name = name;
     }
-
 
     @Override
     public Integer getCode() {
@@ -31,5 +28,4 @@ public enum ReleaseStatus implements BaseEnum {
     public String getName() {
         return this.name;
     }
-
 }

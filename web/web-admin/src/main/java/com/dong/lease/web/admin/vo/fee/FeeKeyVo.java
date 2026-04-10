@@ -7,10 +7,9 @@ import lombok.Data;
 
 import java.util.List;
 
-
 @Data
 public class FeeKeyVo extends FeeKey {
 
-    @Schema(description = "杂费value列表")
+    @Schema(description = "List of fee values")
     private List<FeeValue> feeValueList;
 }

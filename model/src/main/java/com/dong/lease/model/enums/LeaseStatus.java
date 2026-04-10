@@ -5,13 +5,13 @@ import com.fasterxml.jackson.annotation.JsonValue;
 
 public enum LeaseStatus implements BaseEnum {
 
-    SIGNING(1, "签约待确认"),
-    SIGNED(2, "已签约"),
-    CANCELED(3, "已取消"),
-    EXPIRED(4, "已到期"),
-    WITHDRAWING(5, "退租待确认"),
-    WITHDRAWN(6, "已退租"),
-    RENEWING(7, "续约待确认");
+    SIGNING(1, "Pending Signature"),
+    SIGNED(2, "Signed"),
+    CANCELED(3, "Canceled"),
+    EXPIRED(4, "Expired"),
+    WITHDRAWING(5, "Pending Move-out"),
+    WITHDRAWN(6, "Moved Out"),
+    RENEWING(7, "Pending Renewal");
 
     @EnumValue
     @JsonValue
@@ -33,5 +33,4 @@ public enum LeaseStatus implements BaseEnum {
     public String getName() {
         return this.name;
     }
-
 }

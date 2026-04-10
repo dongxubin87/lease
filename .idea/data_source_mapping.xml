@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourcePerFileMappings">
+    <file url="file://$PROJECT_DIR$/web/web-admin/src/main/resources/mapper/AttrKeyMapper.xml" value="fdae56be-bd8b-479c-aa33-31d433dff0a7" />
+    <file url="file://$PROJECT_DIR$/web/web-admin/src/main/resources/mapper/FeeKeyMapper.xml" value="fdae56be-bd8b-479c-aa33-31d433dff0a7" />
+  </component>
+</project>

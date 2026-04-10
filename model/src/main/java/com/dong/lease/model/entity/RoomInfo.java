@@ -8,27 +8,26 @@ import lombok.Data;
 
 import java.math.BigDecimal;
 
-@Schema(description = "房间信息表")
+@Schema(description = "Room information table")
 @TableName(value = "room_info")
 @Data
 public class RoomInfo extends BaseEntity {
 
     private static final long serialVersionUID = 1L;
 
-    @Schema(description = "房间号")
+    @Schema(description = "Room number")
     @TableField(value = "room_number")
     private String roomNumber;
 
-    @Schema(description = "租金（元/月）")
+    @Schema(description = "Rent (CNY/month)")
     @TableField(value = "rent")
     private BigDecimal rent;
 
-    @Schema(description = "所属公寓id")
+    @Schema(description = "Apartment ID")
     @TableField(value = "apartment_id")
     private Long apartmentId;
 
-    @Schema(description = "是否发布")
+    @Schema(description = "Release status")
     @TableField(value = "is_release")
     private ReleaseStatus isRelease;
-
 }

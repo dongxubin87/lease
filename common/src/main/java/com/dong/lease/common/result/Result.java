@@ -2,19 +2,17 @@ package com.dong.lease.common.result;
 
 import lombok.Data;
 
-/**
- * 全局统一返回结果类
- */
+
 @Data
 public class Result<T> {
 
-    //返回码
+
     private Integer code;
 
-    //返回消息
+
     private String message;
 
-    //返回数据
+
     private T data;
 
     public Result() {

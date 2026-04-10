@@ -3,14 +3,11 @@ package com.dong.lease.model.enums;
 import com.baomidou.mybatisplus.annotation.EnumValue;
 import com.fasterxml.jackson.annotation.JsonValue;
 
-
 public enum BaseStatus implements BaseEnum {
 
+    ENABLE(1, "Enabled"),
 
-    ENABLE(1, "正常"),
-
-    DISABLE(0, "禁用");
-
+    DISABLE(0, "Disabled");
 
     @EnumValue
     @JsonValue

@@ -10,16 +10,16 @@ import lombok.Data;
  */
 @TableName(value = "lease_term")
 @Data
-@Schema(description = "租期信息")
+@Schema(description = "Lease Term Information")
 public class LeaseTerm extends BaseEntity {
 
     private static final long serialVersionUID = 1L;
 
-    @Schema(description = "租期月数")
+    @Schema(description = "Number of months for the lease term")
     @TableField("month_count")
     private Integer monthCount;
 
-    @Schema(description = "租期单位:月")
+    @Schema(description = "Lease term unit (e.g., month)")
     @TableField("unit")
     private String unit;
 }
