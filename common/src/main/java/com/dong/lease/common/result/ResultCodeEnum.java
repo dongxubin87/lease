@@ -28,6 +28,8 @@ public enum ResultCodeEnum {
     ADMIN_ACCOUNT_DISABLED_ERROR(308, "User has been disabled"),
     ADMIN_ACCESS_FORBIDDEN(309, "Access denied"),
 
+    ADMIN_APARTMENT_DELETE_ERROR(310, "Please delete roominfo first"),
+
     APP_LOGIN_AUTH(501, "Not logged in"),
     APP_LOGIN_PHONE_EMPTY(502, "Phone number is empty"),
     APP_LOGIN_CODE_EMPTY(503, "Verification code is empty"),

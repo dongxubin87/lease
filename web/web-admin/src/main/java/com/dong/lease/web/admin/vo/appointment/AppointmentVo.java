@@ -6,10 +6,10 @@ import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.Data;
 
 @Data
-@Schema(description = "预约看房信息")
+@Schema(description = "View Appointment Information")
 public class AppointmentVo extends ViewAppointment {
 
-    @Schema(description = "预约公寓信息")
+    @Schema(description = "Apartment information for the appointment")
     private ApartmentInfo apartmentInfo;
 
 }

@@ -11,68 +11,68 @@ import lombok.Data;
 import java.math.BigDecimal;
 import java.util.Date;
 
-@Schema(description = "租约信息表")
+@Schema(description = "Lease Agreement Table")
 @TableName(value = "lease_agreement")
 @Data
 public class LeaseAgreement extends BaseEntity {
 
     private static final long serialVersionUID = 1L;
 
-    @Schema(description = "承租人手机号码")
+    @Schema(description = "Tenant phone number")
     @TableField(value = "phone")
     private String phone;
 
-    @Schema(description = "承租人姓名")
+    @Schema(description = "Tenant name")
     @TableField(value = "name")
     private String name;
 
-    @Schema(description = "承租人身份证号码")
+    @Schema(description = "Tenant ID card number")
     @TableField(value = "identification_number")
     private String identificationNumber;
 
-    @Schema(description = "签约公寓id")
+    @Schema(description = "Leased apartment ID")
     @TableField(value = "apartment_id")
     private Long apartmentId;
 
-    @Schema(description = "签约房间id")
+    @Schema(description = "Leased room ID")
     @TableField(value = "room_id")
     private Long roomId;
 
-    @Schema(description = "租约开始日期")
+    @Schema(description = "Lease start date")
     @JsonFormat(pattern = "yyyy-MM-dd")
     @TableField(value = "lease_start_date")
     private Date leaseStartDate;
 
-    @Schema(description = "租约结束日期")
-    @TableField(value = "lease_end_date")
+    @Schema(description = "Lease end date")
     @JsonFormat(pattern = "yyyy-MM-dd")
+    @TableField(value = "lease_end_date")
     private Date leaseEndDate;
 
-    @Schema(description = "租期id")
+    @Schema(description = "Lease term ID")
     @TableField(value = "lease_term_id")
     private Long leaseTermId;
 
-    @Schema(description = "租金（元/月）")
+    @Schema(description = "Rent (per month)")
     @TableField(value = "rent")
     private BigDecimal rent;
 
-    @Schema(description = "押金（元）")
+    @Schema(description = "Deposit")
     @TableField(value = "deposit")
     private BigDecimal deposit;
 
-    @Schema(description = "支付类型id")
+    @Schema(description = "Payment type ID")
     @TableField(value = "payment_type_id")
     private Long paymentTypeId;
 
-    @Schema(description = "租约状态")
+    @Schema(description = "Lease status")
     @TableField(value = "status")
     private LeaseStatus status;
 
-    @Schema(description = "租约来源")
+    @Schema(description = "Lease source type")
     @TableField(value = "source_type")
     private LeaseSourceType sourceType;
 
-    @Schema(description = "备注信息")
+    @Schema(description = "Additional notes")
     @TableField(value = "additional_info")
     private String additionalInfo;
 

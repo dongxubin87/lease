@@ -6,63 +6,62 @@ import com.baomidou.mybatisplus.annotation.TableName;
 import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.Data;
 
-@Schema(description = "公寓信息表")
+@Schema(description = "Apartment Information Table")
 @TableName(value = "apartment_info")
 @Data
 public class ApartmentInfo extends BaseEntity {
 
     private static final long serialVersionUID = 1L;
 
-    @Schema(description = "公寓名称")
+    @Schema(description = "Apartment name")
     @TableField(value = "name")
     private String name;
 
-    @Schema(description = "公寓介绍")
+    @Schema(description = "Apartment description")
     @TableField(value = "introduction")
     private String introduction;
 
-    @Schema(description = "所处区域id")
+    @Schema(description = "District ID")
     @TableField(value = "district_id")
     private Long districtId;
 
-    @Schema(description = "所处区域名称")
+    @Schema(description = "District name")
     @TableField(value = "district_name")
     private String districtName;
 
-    @Schema(description = "所处城市id")
+    @Schema(description = "City ID")
     @TableField(value = "city_id")
     private Long cityId;
 
-    @Schema(description = "所处城市名称")
+    @Schema(description = "City name")
     @TableField(value = "city_name")
     private String cityName;
 
-    @Schema(description = "所处省份id")
+    @Schema(description = "Province ID")
     @TableField(value = "province_id")
     private Long provinceId;
 
-    @Schema(description = "所处区域名称")
+    @Schema(description = "Province name")
     @TableField(value = "province_name")
     private String provinceName;
 
-    @Schema(description = "详细地址")
+    @Schema(description = "Detailed address")
     @TableField(value = "address_detail")
     private String addressDetail;
 
-    @Schema(description = "经度")
+    @Schema(description = "Latitude")
     @TableField(value = "latitude")
     private String latitude;
 
-    @Schema(description = "纬度")
+    @Schema(description = "Longitude")
     @TableField(value = "longitude")
     private String longitude;
 
-    @Schema(description = "公寓前台电话")
+    @Schema(description = "Front desk phone number")
     @TableField(value = "phone")
     private String phone;
 
-    @Schema(description = "是否发布")
+    @Schema(description = "Release status")
     @TableField(value = "is_release")
     private ReleaseStatus isRelease;
-
 }

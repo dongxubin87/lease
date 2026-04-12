@@ -7,49 +7,47 @@ import com.baomidou.mybatisplus.annotation.TableName;
 import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.Data;
 
-@Schema(description = "员工信息")
+@Schema(description = "Employee Information")
 @TableName(value = "system_user")
 @Data
 public class SystemUser extends BaseEntity {
 
-
     private static final long serialVersionUID = 1L;
 
-    @Schema(description = "用户名")
+    @Schema(description = "Username")
     @TableField(value = "username")
     private String username;
 
-    @Schema(description = "密码")
+    @Schema(description = "Password")
     @TableField(value = "password")
     private String password;
 
-    @Schema(description = "姓名")
+    @Schema(description = "Name")
     @TableField(value = "name")
     private String name;
 
-    @Schema(description = "用户类型")
+    @Schema(description = "User type")
     @TableField(value = "type")
     private SystemUserType type;
 
-    @Schema(description = "手机号码")
+    @Schema(description = "Phone number")
     @TableField(value = "phone")
     private String phone;
 
-    @Schema(description = "头像地址")
+    @Schema(description = "Avatar URL")
     @TableField(value = "avatar_url")
     private String avatarUrl;
 
-    @Schema(description = "备注信息")
+    @Schema(description = "Additional information")
     @TableField(value = "additional_info")
     private String additionalInfo;
 
-    @Schema(description = "岗位id")
+    @Schema(description = "Post ID")
     @TableField(value = "post_id")
     private Long postId;
 
-    @Schema(description = "账号状态")
+    @Schema(description = "Account status")
     @TableField(value = "status")
     private BaseStatus status;
-
 
 }

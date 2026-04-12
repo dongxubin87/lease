@@ -4,26 +4,25 @@ import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.Data;
 
 @Data
-@Schema(description = "预约看房查询实体")
+@Schema(description = "View Appointment Query Object")
 public class AppointmentQueryVo {
 
-
-    @Schema(description="预约公寓所在省份")
+    @Schema(description = "Province where the appointment apartment is located")
     private Long provinceId;
 
-    @Schema(description="预约公寓所在城市")
+    @Schema(description = "City where the appointment apartment is located")
     private Long cityId;
 
-    @Schema(description="预约公寓所在区")
+    @Schema(description = "District where the appointment apartment is located")
     private Long districtId;
 
-    @Schema(description="预约公寓所在公寓")
+    @Schema(description = "Apartment for the appointment")
     private Long apartmentId;
 
-    @Schema(description="预约用户姓名")
+    @Schema(description = "Name of the appointment user")
     private String name;
 
-    @Schema(description="预约用户手机号码")
+    @Schema(description = "Phone number of the appointment user")
     private String phone;
 
 }

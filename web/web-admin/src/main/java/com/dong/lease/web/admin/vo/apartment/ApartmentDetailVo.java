@@ -1,6 +1,5 @@
 package com.dong.lease.web.admin.vo.apartment;
 
-
 import com.dong.lease.model.entity.ApartmentInfo;
 import com.dong.lease.model.entity.FacilityInfo;
 import com.dong.lease.model.entity.LabelInfo;
@@ -11,20 +10,20 @@ import lombok.Data;
 
 import java.util.List;
 
-@Schema(description = "公寓信息")
+@Schema(description = "Apartment Detail Information")
 @Data
 public class ApartmentDetailVo extends ApartmentInfo {
 
-    @Schema(description = "图片列表")
+    @Schema(description = "Image list")
     private List<GraphVo> graphVoList;
 
-    @Schema(description = "标签列表")
+    @Schema(description = "Label list")
     private List<LabelInfo> labelInfoList;
 
-    @Schema(description = "配套列表")
+    @Schema(description = "Facility list")
     private List<FacilityInfo> facilityInfoList;
 
-    @Schema(description = "杂费列表")
+    @Schema(description = "Fee list")
     private List<FeeValueVo> feeValueVoList;
 
 }

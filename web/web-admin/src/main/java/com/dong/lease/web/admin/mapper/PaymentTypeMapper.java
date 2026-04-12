@@ -3,14 +3,12 @@ package com.dong.lease.web.admin.mapper;
 import com.dong.lease.model.entity.PaymentType;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 
-/**
- * @author liubo
- * @description 针对表【payment_type(支付方式表)】的数据库操作Mapper
- * @createDate 2023-07-24 15:48:00
- * @Entity com.dong.lease.model.PaymentType
- */
+import java.util.List;
+
+
 public interface PaymentTypeMapper extends BaseMapper<PaymentType> {
 
+    List<PaymentType> selectListByRoomId(Long id);
 }
 
 

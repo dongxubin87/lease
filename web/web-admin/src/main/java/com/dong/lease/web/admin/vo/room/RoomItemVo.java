@@ -7,18 +7,17 @@ import lombok.Data;
 
 import java.util.Date;
 
-
 @Data
-@Schema(description = "房间信息")
+@Schema(description = "Room Information")
 public class RoomItemVo extends RoomInfo {
 
-    @Schema(description = "租约结束日期")
+    @Schema(description = "Lease end date")
     private Date leaseEndDate;
 
-    @Schema(description = "当前入住状态")
+    @Schema(description = "Current check-in status")
     private Boolean isCheckIn;
 
-    @Schema(description = "所属公寓信息")
+    @Schema(description = "Associated apartment information")
     private ApartmentInfo apartmentInfo;
 
 }

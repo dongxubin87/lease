@@ -20,11 +20,20 @@ mybatis-plus:
   configuration:
     log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
 
-knife4j:
-  enable: true
+#knife4j:
+#  enable: true
+#
+#springdoc:
+#  api-docs:
+#    enabled: true
+#  swagger-ui:
+#    enabled: true
+
+minio:
+  endpoint: http://192.168.64.4:9000
+  access-key: minioadmin
+  secret-key: minioadmin
+  bucket-name: lease
 
 springdoc:
-  api-docs:
-    enabled: true
-  swagger-ui:
-    enabled: true
+  default-flat-param-object: true
