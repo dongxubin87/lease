@@ -2,9 +2,7 @@ package com.dong.lease.common.result;
 
 import lombok.Getter;
 
-/**
- * Unified result status codes
- */
+
 @Getter
 public enum ResultCodeEnum {
 

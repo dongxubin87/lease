@@ -19,7 +19,7 @@ public class SystemUser extends BaseEntity {
     private String username;
 
     @Schema(description = "Password")
-    @TableField(value = "password")
+    @TableField(value = "password", select = false)
     private String password;
 
     @Schema(description = "Name")

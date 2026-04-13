@@ -19,7 +19,7 @@ public class UserInfo extends BaseEntity {
     private String phone;
 
     @Schema(description = "Password")
-    @TableField(value = "password")
+    @TableField(value = "password", select = false)
     private String password;
 
     @Schema(description = "Avatar URL")

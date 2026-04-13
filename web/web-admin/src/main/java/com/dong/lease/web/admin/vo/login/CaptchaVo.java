@@ -5,13 +5,13 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 
 @Data
-@Schema(description = "图像验证码")
+@Schema(description = "Image Captcha")
 @AllArgsConstructor
 public class CaptchaVo {
 
-    @Schema(description="验证码图片信息")
+    @Schema(description = "Captcha image data")
     private String image;
 
-    @Schema(description="验证码key")
+    @Schema(description = "Captcha key")
     private String key;
 }

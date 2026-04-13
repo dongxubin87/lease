@@ -15,6 +15,11 @@ spring:
       maximum-pool-size: 12 # Maximum number of connections in the pool (default: 10)
       minimum-idle: 10 # Minimum number of idle connections
       pool-name: SPHHikariPool # Connection pool name
+  data:
+    redis:
+      host: 192.168.64.4
+      port: 6379
+      database: 0
 
 mybatis-plus:
   configuration:

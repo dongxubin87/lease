@@ -4,18 +4,18 @@ import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.Data;
 
 @Data
-@Schema(description = "后台管理系统登录信息")
+@Schema(description = "Backend System Login Information")
 public class LoginVo {
 
-    @Schema(description="用户名")
+    @Schema(description = "Username")
     private String username;
 
-    @Schema(description="密码")
+    @Schema(description = "Password")
     private String password;
 
-    @Schema(description="验证码key")
+    @Schema(description = "Captcha key")
     private String captchaKey;
 
-    @Schema(description="验证码code")
+    @Schema(description = "Captcha code")
     private String captchaCode;
 }

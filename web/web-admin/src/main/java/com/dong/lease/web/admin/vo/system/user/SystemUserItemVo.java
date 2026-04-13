@@ -1,17 +1,15 @@
 package com.dong.lease.web.admin.vo.system.user;
 
-import com.dong.lease.model.entity.SystemUser;
 import com.baomidou.mybatisplus.annotation.TableField;
+import com.dong.lease.model.entity.SystemUser;
 import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.Data;
 
-
 @Data
-@Schema(description = "后台管理系统用户基本信息实体")
+@Schema(description = "Backend System User Basic Information Object")
 public class SystemUserItemVo extends SystemUser {
 
-    @Schema(description = "岗位名称")
+    @Schema(description = "Position name")
     @TableField(value = "post_name")
     private String postName;
-
 }

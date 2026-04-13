@@ -1,6 +1,7 @@
 package com.dong.lease.model.entity;
 
 import com.dong.lease.model.enums.AppointmentStatus;
+import com.fasterxml.jackson.annotation.JsonFormat;
 import io.swagger.v3.oas.annotations.media.Schema;
 import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableName;
@@ -33,6 +34,7 @@ public class ViewAppointment extends BaseEntity {
 
     @Schema(description = "Appointment time")
     @TableField(value = "appointment_time")
+    @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss")
     private Date appointmentTime;
 
     @Schema(description = "Additional information")
